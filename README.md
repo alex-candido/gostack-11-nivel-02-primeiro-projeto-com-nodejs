@@ -42,16 +42,16 @@ Este projeto foi construído com Node.js, TypeScript, além de ferramentas como 
 - Clone esse repositório
 ```
 $ git clone https://github.com/alex-candido/primeiro-projeto-com-nodejs.git
-
+```
 - Instalar dependências
-
+```
 $ npm install
-
+```
 - Converta TypeScript em JavaScript
-
+```
 $ npm run build
-
+```
 - Inicie o projeto
-
+```
 $ npm run dev:server
 ```
