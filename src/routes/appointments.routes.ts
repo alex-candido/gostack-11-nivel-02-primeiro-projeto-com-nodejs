@@ -6,6 +6,8 @@ import AppointmentsRepository from '../repositories/AppointmentsRepository';
 const appointmentsRouter = Router();
 const appointmentsRepository = new AppointmentsRepository();
 
+// Rota: Receber a requisição, chamar outro arquivo, devolver uma resposta
+
 // SoC: Separations of concerns (Separação de preocupações)
 appointmentsRouter.get('/', (request, response) => {
   const appointments = appointmentsRepository.all();
@@ -16,7 +18,8 @@ appointmentsRouter.get('/', (request, response) => {
 appointmentsRouter.post('/', (request, response) => {
   const { provider, date } = request.body;
 
-  const parsedDate = startOfHour(parseISO(date));
+  const parsedDate = parseISO(date);
+  const appointmentDate = startOfHour(parsedDate);
 
   const findAppointmentInSameDate =
     appointmentsRepository.findByDate(parsedDate);
@@ -29,7 +32,7 @@ appointmentsRouter.post('/', (request, response) => {
 
   const appointment = appointmentsRepository.create({
     provider,
-    date: parsedDate,
+    date: appointmentDate,
   });
 
   return response.json(appointment);
