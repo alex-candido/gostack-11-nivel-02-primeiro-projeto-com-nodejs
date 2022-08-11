@@ -4,8 +4,8 @@ import AppointmentsRepository from '../repositories/AppointmentsRepository';
 
 /**
  * [x] Recebimento das informações
- * [/] Tratativa de erros/excessão
- * [/] Acesso ao repositório
+ * [x] Tratativa de erros/excessão
+ * [x] Acesso ao repositório
  */
 
 interface Request {
@@ -31,7 +31,7 @@ class CreateAppointmentService {
       this.appointmentsRepository.findByDate(appointmentDate);
 
     if (findAppointmentInSameDate) {
-      throw Error('This appointment is already booked');
+      throw new Error('This appointment is already booked');
     }
 
     const appointment = this.appointmentsRepository.create({
