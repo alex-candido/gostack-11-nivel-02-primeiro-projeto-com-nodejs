@@ -3,7 +3,7 @@
 # Primeiro projeto com Node.js
 
 ## 💻 Sobre
-Este projeto foi construído com Node.js, TypeScript, além de ferramentas como ts-node-dev, ESLint, Prettier e EditorConfig. A aplicação recebe requisiçes HTTP através do http:/localhost:3333/appointments e salva os dados
+Este projeto foi construído com Node.js, TypeScript, além de ferramentas como ts-node-dev, ESLint, Prettier e EditorConfig. A aplicação recebe requisiçes HTTP através do http:/localhost:3333/appointments e salva os dados em uma Array.
 
 ## 🚀 Abordagens
 
