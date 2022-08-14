@@ -3,7 +3,7 @@
 # Primeiro projeto com Node.js (REFATORADO 2022!)
 
 ## 💻 Sobre
-Este projeto foi construído com Node.js, TypeScript, além de ferramentas como ts-node-dev, ESLint, Prettier e EditorConfig. A aplicação recebe requisiçes HTTP através do link <strong>http:/localhost:3333/appointments</strong> e salva os dados em uma Array.
+Aplicação de cadastro de agendamentos, o projeto foi construído com Node.js, TypeScript, além de ferramentas como ts-node-dev, ESLint, Prettier e EditorConfig. A aplicação recebe requisiçes HTTP através do link <strong>http:/localhost:3333/appointments</strong> e salva os dados em uma Array.
 
 ## 🚀 Abordagens
 
