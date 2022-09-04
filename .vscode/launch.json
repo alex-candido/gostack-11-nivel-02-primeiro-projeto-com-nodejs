@@ -8,15 +8,17 @@
       "type": "pwa-node",
       "request": "attach",
       "protocol": "inspector",
-      "restart": true,
+      "restart": "true",
       "name": "Debug",
       "skipFiles": [
         "<node_internals>/**"
       ],
-      "program": "${workspaceFolder}\\09-projeto-nodejs\\ts-project\\src\\server.ts",
+      "program": "${workspaceFolder}\\src",
       "outFiles": [
         "${workspaceFolder}/**/*.js"
       ]
     }
   ]
 }
+
+
